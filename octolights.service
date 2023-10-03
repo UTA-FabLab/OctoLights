@@ -1,0 +1,14 @@
+[Unit]
+Description=OctoLights Service
+After=octoprint.service
+Wants=octoprint.service
+
+[Service]
+ExecStartPre=/bin/sleep 15
+ExecStart=/usr/bin/python3 /home/pi/OctoLights/octolights.py
+WorkingDirectory=/home/pi
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
