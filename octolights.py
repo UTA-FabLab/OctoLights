@@ -27,7 +27,8 @@ headers = {
 }
 
 # Set FabApp info: URL to flud.php and device id.
-fa_url = 'FA_FLUD_URL'
+fa_base_url = 'FA_FLUD_URL'
+fa_url = '{}api/flud.php'.format(fa_base_url)
 fa_payload = json.dumps({
   "device_id": "DEV_ID",
   "type": "device_status"
