@@ -39,7 +39,7 @@ fa_headers = {
   'Content-Type': 'application/json'
 }
 
-fa_check_interval = 5  # Check transaction status every 5 seconds
+fa_check_interval = 15  # Check transaction status every 5 seconds
 txn_state = None
 
 # Get transaction state
